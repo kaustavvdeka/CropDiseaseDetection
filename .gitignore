@@ -1,0 +1,38 @@
+data
+data*
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store  
+
+# Ignore node_modules
+node_modules/
+# Ignore build output
+dist/
+build/
+# Ignore environment variables.env
+# Ignore coverage reportscoverage/
+# Ignore IDE specific files
+.vscode/
+.idea/
+# Ignore OS generated files
+Thumbs.db
+Desktop.ini
+# Ignore npm debug logsnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# Ignore lock files
+package-lock.json       
+yarn.lock
+# Ignore test coverage reports
+coverage/
+# Ignore temporary files
+*.tmp
+*.log
+*.bak
+models/
+models/*
+data/
+data/*
