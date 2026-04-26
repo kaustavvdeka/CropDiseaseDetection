@@ -32,7 +32,6 @@ coverage/
 *.tmp
 *.log
 *.bak
-models/
-models/*
+
 data/
 data/*
