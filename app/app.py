@@ -332,9 +332,16 @@ st.markdown("""
 def load_model():
     model_path = "models/plantdisease_mobilenetv2.h5"
     class_path = "models/class_indices.json"
+
     if os.path.exists(model_path) and os.path.exists(class_path):
-        from model.predictor import PlantDiseasePredictor
-        return PlantDiseasePredictor(model_path, class_path)
+        try:
+            from model.predictor import PlantDiseasePredictor
+            return PlantDiseasePredictor(model_path, class_path)
+        except Exception as e:
+            st.warning("⚠️ TensorFlow model not available")
+            st.info(f"Reason: {e}")
+            return None
+
     return None
 
 predictor = load_model()
