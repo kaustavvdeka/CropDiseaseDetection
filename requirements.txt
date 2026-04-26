@@ -9,9 +9,9 @@
 # anthropic>=0.30.0
 # kaggle>=1.5.16
 streamlit
-pillow
 numpy
+pillow
 scikit-learn
 matplotlib
 seaborn
-anthropic
+tensorflow-cpu==2.12.0
